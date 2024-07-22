@@ -1,20 +1,59 @@
 
-simple controlled sacco management system/table banking system in php and mysql 
+---
 
-roles 
+# Sacco Management System
 
-member can login to their account and make a contribution and saving 
-members can also apply for a loan application and admin can grant a loan to these member
-members can only be added by admin 
+## Overview
 
-admin controls the entire application
+The Sacco Management System is a simple web application designed for managing contributions, savings, and loans within a sacco or table banking system. The application supports different roles with varying levels of access and functionality.
 
-login details 
-for admin email:admin@gmail.com and password = Aumnchde2
-for staff email:test@gmail.com and password = Tuwxmghn1
+## Roles and Responsibilities
 
+- **Member**
+  - Can log in to their account.
+  - Make contributions and savings.
+  - Apply for loan applications.
 
+- **Admin**
+  - Has full control over the application.
+  - Can add new members.
+  - Can grant loans to members.
 
-for support or collaboration or contribution whatsapp me on +254745566505 or email at omundifelix30@gmail.com or website url = "https://nyagaka.com"
+## Login Details
 
-It is simple hence requires integration of payment systems  like paypal, mpesa and anyone that exits in your country
+- **Admin**
+  - Email: `admin@gmail.com`
+  - Password: `Aumnchde2`
+
+- **Staff**
+  - Email: `test@gmail.com`
+  - Password: `Tuwxmghn1`
+
+## Features
+
+- **Member Functionality**
+  - Account login and management.
+  - Contribution and savings management.
+  - Loan application.
+
+- **Admin Functionality**
+  - User management (add, remove members).
+  - Loan approval and management.
+
+## Integration
+
+The system supports integration with various payment systems for handling transactions. Payment integration options include:
+- PayPal
+- M-Pesa
+- Other local payment systems as available in your country.
+
+## Support and Collaboration
+
+For support, collaboration, or contributions, you can reach out via:
+
+- **WhatsApp**: +254745566505
+- **Email**: omundifelix30@gmail.com
+- **Website**: [https://nyagaka.com](https://nyagaka.com)
+
+---
+

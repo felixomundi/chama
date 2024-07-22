@@ -62,7 +62,7 @@ CREATE TABLE `credit` (
   `balance` float NOT NULL,
   `refno` varchar(50) NOT NULL,
   `source` varchar(30) NOT NULL,
-  `credit_date` date NOT NULL DEFAULT current_timestamp(),
+  `credit_date` datetime NOT NULL DEFAULT current_timestamp(),
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -108,7 +108,7 @@ CREATE TABLE `investment` (
   `id` int(11) NOT NULL,
   `details` varchar(10000) NOT NULL,
   `amount` float NOT NULL DEFAULT 0,
-  `date` date NOT NULL DEFAULT current_timestamp(),
+  `date` datetime NOT NULL DEFAULT current_timestamp(),
   `refno` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -131,7 +131,7 @@ CREATE TABLE `loans` (
   `userid` int(11) NOT NULL,
   `amount` float NOT NULL DEFAULT 0,
   `type` varchar(40) NOT NULL,
-  `due_date` date DEFAULT NULL,
+  `due_date` datetime DEFAULT NULL,
   `status` int(11) NOT NULL,
   `created_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -157,7 +157,7 @@ CREATE TABLE `payments` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `amount` float NOT NULL DEFAULT 0,
-  `pay_date` date NOT NULL DEFAULT current_timestamp(),
+  `pay_date` datetime NOT NULL DEFAULT current_timestamp(),
   `balance` float NOT NULL,
   `pay_type` varchar(30) NOT NULL,
   `refno` varchar(20) NOT NULL,
@@ -183,7 +183,7 @@ CREATE TABLE `plans` (
   `id` int(11) NOT NULL,
   `type` varchar(30) NOT NULL,
   `terms` varchar(10000) NOT NULL,
-  `creationdate` date NOT NULL DEFAULT current_timestamp(),
+  `creationdate` datetime NOT NULL DEFAULT current_timestamp(),
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -208,7 +208,7 @@ CREATE TABLE `savings` (
   `amount` float NOT NULL DEFAULT 0,
   `pay_date` datetime NOT NULL DEFAULT current_timestamp(),
   `status` int(11) NOT NULL,
-  `created_date` date NOT NULL DEFAULT current_timestamp()
+  `created_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
